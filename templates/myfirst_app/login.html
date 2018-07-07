@@ -1,0 +1,12 @@
+{% extends 'myfirst_app/base.html' %}
+{% block body_block %}
+    <div style="margin-top:50px" class="well" align="center">
+    <form action="{% url 'login_form' %}" method="POST">
+        <h2>Login </h2>
+    {{ login_form.as_p }}
+    {% csrf_token %}
+        <input type="submit" id='mybtn' class="btn btn-info" value="Login">
+    </form>
+    </div>
+
+{% endblock %}

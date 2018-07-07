@@ -1,0 +1,15 @@
+{% extends 'myfirst_app/base.html' %}
+{% block body_block %}
+    <div style="margin-top:50px" class="well" align="center">
+        <form method="post">
+            <h1><b>Register Here</b></h1>
+            {{ singupform.as_p }}
+            {% csrf_token %}
+            <input type="submit" id='mybtn' class="btn btn-info" value="Next">
+        </form>
+    </div>
+    </div>
+{% endblock %}
+<footer class="container-fluid text-center">
+</footer>
+</div>
